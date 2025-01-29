@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener | Rupam</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>URL Shortener</h1>
+    <form id="urlForm">
+      <label for="originalUrl">Enter URL to Shorten:</label>
+      <input type="url" id="originalUrl" placeholder="https://example.com" required>
+      <button type="submit">Generate Short URL</button>
+    </form>
+    <div id="result" class="hidden">
+      <div class="result-container">
+        <p>Short URL: <a id="shortUrl" target="_blank"></a></p>
+        <div class="button-group">
+          <button id="copyBtn" class="copy-btn">Copy</button>
+          <button id="refreshBtn" class="refresh-btn">Refresh</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made by <a href="https://mapur2.github.io/new_portfolio/" target="_blank" rel="noopener noreferrer">Rupam</a> - URL Shortening Service</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
