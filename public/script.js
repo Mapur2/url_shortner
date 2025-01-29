@@ -8,7 +8,7 @@ document.getElementById("urlForm").addEventListener("submit", async (e) => {
       submitBtn.disabled = true;
       submitBtn.textContent = "Generating...";
   
-      const response = await fetch("http://localhost:8000/shorten/create", {
+      const response = await fetch("https://urlshortner-production-0cf2.up.railway.app/shorten/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

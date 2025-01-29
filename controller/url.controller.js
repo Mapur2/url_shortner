@@ -20,7 +20,7 @@ const shortenUrl = asyncHandler(async (req, res) => {
         throw new ApiError(500,"Server Error")
     return res.status(201).json(
         new ApiResponse(201, {
-            shortUrl: `http://localhost:8000/shorten/${shortId}`,
+            shortUrl: `https://urlshortner-production-0cf2.up.railway.app/shorten/${shortId}`,
         },
             "Shortened url")
     )
